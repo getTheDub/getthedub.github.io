@@ -1,150 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Off Menu Party (submitted)</title>
-        <style>
-            body {
-                background: rgb(255, 130, 68);
-                color: white;
-                font-family: "Roboto", sans-serif;
-            }
-            h1 {
-                position: fixed;
-                top: -35px;
-                left: 0px;
-                z-index: 1;
-                width: 100%;
-                background: white;
-                color: rgb(255, 130, 68);
-                text-align: center;
-                font-family: "Copperplate", sans-serif;
-                font-size:50px;
-                padding: 9px;
-                box-shadow: 0px 3px 11px 2px black;
-            }
-            .the-rest{
-                position: absolute;
-                top: 80px;
-            }
-            h2 {
-                text-align: center;
-                margin-bottom:-15px;
-            }
-            h3 {
-                text-align: center;
-                color:rgb(255, 188, 166);
-                margin-bottom: -6px;
-            }
-            .button {
-                background-color: rgb(26, 176, 0);
-                border: 2px solid rgb(114, 255, 89);
-                color: white;
-                padding: 15px;
-                text-align: center;
-                border-radius: 5px;
-                cursor: pointer;
-                transition-duration: 0.3s;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            .button:hover{
-                background-color: rgb(138, 255, 112);
-                border: 2px solid rgb(27, 179, 0);
-                color: black;
-            }
-            #button-space {
-                margin: 10px;
-            }
-            #info {
-                clear:both;
-                margin: 20px 20px 40px 20px;
-            }
-            #details {
-                font-weight: 1000;
-                font-size:22px;
-                }
-            #food-pic{
-                width:270px;
-                float:left;
-                margin:20px;
-            }
-            #guest-list{
-                position: absolute;
-                left: 350px;
-                width: 140px;
-                margin-top: 60px;
-                border: 2px outset black;
-                padding-top: 10px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-                padding-left: 32px;
-            }
-            .gamble {
-                font-family: cursive;
-                line-height: 1;
-            }
-            .acaster {
-                font-family: serif;
-                line-height: 4;
-                margin: 20px;
-                font-size: 17px;
-            }
-            footer {
-                background-color: white;
-                position: absolute;
-                left: -2%;
-                width: 100%;
-                color: black;
-                font-family: "Copperplate", sans-serif;
-                font-size:20px;
-                padding: 10px;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <h1>Off Menu Party</h1>
-        <div class="the-rest">
-        <h2>Papadams or Bread?</h2>
-        <h3>Papadams or Bread!</h3>
-        
-        <ul id="guest-list"> <strong id="details">Guests</strong>
-            <li>Domhnall Gleeson</li>
-            <li>Aparna Nancherla</li>
-            <li>Jack McBrayer</li>
-            <li>Dara Ó Briain</li>
-            <li>Nish Kumar</li>
-        </ul>
-        
-        
-        <img id="food-pic" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/croissant.png">
-        
-       
-        <p id="info"> <span id="details">The Details:</span> Join hosts Ed Gamble and James Acaster for an evening of food and comedy... <br><br>
-        <span class="gamble">We're really going to need more detail aren't we, James? </span> <br>
-        <span class="acaster">Yep, there's no way we can call this a Details Section without more details. </span> <br>
-        
-        <span class="gamble">Well let's try this: we ask attendees their favorite ever venue, host, music, food, and drink from their best party memories.</span> <br>
-        <span class="acaster">Then we give it to 'em, 'cause I'm a genie?</span> <br>
-        
-        <span class="gamble">Nope. We thank them for their time and tell them to get out. And if they mention a secret ingredient of our choosing, we kick them out early.</span> <br>
-        <span class="acaster">Love it. When's it happening, Ed?</span> <br>
-        
-        <span class="gamble">Every Tuesday night.</span> <br>
-        <span class="acaster">We're having a party every Tuesday??</span> <br>
-        
-        <span class="gamble">Yep. We'll be the only game in town.</span> <br>
-        <span class="acaster">Brilliant.</span> <br>
-        </p>
-        <div id="button-space"> <a href="#button" class="button">RSVP Here</a> </div>
-            <br>
-            <footer>
-                Thanks for reading!
-            </footer>
-        </div>
-        
-        
-    </body>
-</html>
+<head>
+	<meta charset="utf-8">
+	<title>Off Menu Party (submitted)</title>
+	<style>
+	body {
+		background: #FF8245;
+		color: white;
+		font-family: "Roboto", sans-serif;
+	}
+	header {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+		width: 100%;
+		background: white;
+		color: #FF8206;
+		text-align: center;
+		font-family: "Copperplate", sans-serif;
+		font-size:50px;
+		padding: 9px;
+		box-shadow: 0px 3px 11px 2px black;
+	}
+	.flex-container {
+  		display: flex;
+	}
+	.flex-container > #guest-list {
+		align-self: flex-end
+	}
+	.the-rest{
+		position: absolute;
+		top: 80px;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom:-15px;
+	}
+	h3 {
+		text-align: center;
+		color:rgb(255, 188, 166);
+		margin-bottom: -6px;
+	}
+	button {
+		background-color: rgb(26, 176, 0);
+		border: 2px solid rgb(114, 255, 89);
+		color: white;
+		padding: 15px;
+		margin-left: 10px;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+		transition-duration: 0.3s;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	button:hover{
+		background-color: rgb(138, 255, 112);
+		border: 2px solid rgb(27, 179, 0);
+		color: black;
+	}
+	#button-space {
+		margin: 0 0 75px 50px;
+	}
+	p {
+		clear:both;
+		margin: 20px 20px 100px 20px;
+	}
+	#details {
+		font-weight: 1000;
+		font-size:22px;
+	}
+	#food-pic{
+		width:270px;
+		margin:20px;
+	}
+	#guest-list{
+		height: min-content;
+		width: 140px;
+		margin-top: 20px;
+		border: 2px outset black;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 32px;
+	}
+	.gamble {
+		font-family: cursive;
+	}
+	.acaster {
+		font-family: serif;
+		margin: 20px;
+		font-size: 17px;
+	}
+	footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: white;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: black;
+		font-family: "Copperplate", sans-serif;
+		font-size:20px;
+		padding: 10px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<header>Off Menu Party</header>
+	<div class="the-rest">
+		<h2>Papadams or Bread?</h2>
+		<h3>Papadams or Bread!</h3>
+		<div class="flex-container">
+			<img id="food-pic" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/croissant.png">
+
+			<ul id="guest-list"> <strong id="details">Guests</strong>
+				<li>Domhnall Gleeson</li>
+				<li>Aparna Nancherla</li>
+				<li>Jack McBrayer</li>
+				<li>Dara Ó Briain</li>
+				<li>Nish Kumar</li>
+			</ul>
+		</div>
+
+
+		<p id="info"> <span id="details">The Details:</span>
+			Join hosts Ed Gamble and James Acaster for an evening of food and comedy...
+			<br>
+			<br>
+			<span class="gamble">We're really going to need more detail aren't we, James? </span> <br><br>
+			<span class="acaster">Yep, there's no way we can call this a Details Section without more details. </span> <br><br>
+
+			<span class="gamble">Well let's try this: we ask attendees their favorite ever venue, host, music, food, and drink from their best party memories.</span> <br><br>
+			<span class="acaster">Then we give it to 'em, 'cause I'm a genie?</span> <br><br>
+
+			<span class="gamble">Nope. We thank them for their time and tell them to get out. And if they mention a secret ingredient of our choosing, we kick them out early.</span> <br><br>
+			<span class="acaster">Love it. When's it happening, Ed?</span> <br><br>
+
+			<span class="gamble">Every Tuesday night.</span> <br><br>
+			<span class="acaster">We're having a party every Tuesday??</span> <br><br>
+
+			<span class="gamble">Yep. We'll be the only game in town.</span> <br><br>
+			<span class="acaster">Brilliant.</span>
+		</p>
+
+	</div>
+	<footer>
+		<div class="">
+			Thanks for reading!
+		</div>
+		<button type="button" name="button">RSVP Here</button>
+	</footer>
+
+
+	</body>
+	</html>
